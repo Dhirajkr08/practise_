@@ -1,10 +1,10 @@
 def insertion_sort(arr,length):
-    for i in range(len(arr)):
-        for j in range(i,len(arr)):
-            if arr[j]>arr[j-1]:
+    for i in range(len(arr)-1):
+        for j in range(len(arr)-1-i):
+            if arr[j]>arr[j+1]:
                 d=arr[j]
-                arr[j]=arr[j-1]
-                arr[j-1]=d
+                arr[j]=arr[j+1]
+                arr[j+1]=d
     return arr                  
 
     
