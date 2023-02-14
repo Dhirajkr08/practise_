@@ -1,4 +1,4 @@
-def insertion_sort(arr,length):
+def bubble_sort(arr,length):
     for i in range(len(arr)-1):
         for j in range(len(arr)-1-i):
             if arr[j]>arr[j+1]:
@@ -13,7 +13,7 @@ def main():
     arr=[]
     for i in range(n):
         arr.append(int(input()))
-        output=insertion_sort(arr,n)
+        output=bubble_sort(arr,n)
     for i in range(n):
         print(output[i])
 main()                            
